@@ -59,14 +59,14 @@
 1. Замените все хардкод-**значения** для ресурсов **yandex_compute_image** и **yandex_compute_instance** на **отдельные** переменные. К названиям переменных ВМ добавьте в начало префикс **vm_web_** .  Пример: **vm_web_name**.
 2. Объявите нужные переменные в файле variables.tf, обязательно указывайте тип переменной. Заполните их **default** прежними значениями из main.tf. 
 3. Проверьте terraform plan. Изменений быть не должно. 
-![alt text](https://github.com/ArtemijFedorov/DevOps_Netology/blob/d66a8f56dcc09cfef11c0bbae0e36d0ef17b105e/ter-homeworks/images/Screenshot_11.png)
+![alt text](https://github.com/ArtemijFedorov/DevOps_Netology/blob/9eec6224cd39817cba566ce1ceb779863bea70ec/ter-homeworks/images/Screenshot_11.png)
 
 ### Задание 3
 
 1. Создайте в корне проекта файл 'vms_platform.tf' . Перенесите в него все переменные первой ВМ.
 2. Скопируйте блок ресурса и создайте с его помощью вторую ВМ в файле main.tf: **"netology-develop-platform-db"** ,  ```cores  = 2, memory = 2, core_fraction = 20```. Объявите её переменные с префиксом **vm_db_** в том же файле ('vms_platform.tf').  ВМ должна работать в зоне "ru-central1-b"
 3. Примените изменения.
-![alt text](https://github.com/ArtemijFedorov/DevOps_Netology/blob/d66a8f56dcc09cfef11c0bbae0e36d0ef17b105e/ter-homeworks/images/Screenshot_12.png)
+![alt text](https://github.com/ArtemijFedorov/DevOps_Netology/blob/9eec6224cd39817cba566ce1ceb779863bea70ec/ter-homeworks/images/Screenshot_12.png)
 
 ### Задание 4
 
@@ -75,7 +75,7 @@
 
 В качестве решения приложите вывод значений ip-адресов команды ```terraform output```.
 
-![alt text](https://github.com/ArtemijFedorov/DevOps_Netology/blob/d66a8f56dcc09cfef11c0bbae0e36d0ef17b105e/ter-homeworks/images/Screenshot_13.png)
+![alt text](https://github.com/ArtemijFedorov/DevOps_Netology/blob/9eec6224cd39817cba566ce1ceb779863bea70ec/ter-homeworks/images/Screenshot_13.png)
 ### Задание 5
 
 1. В файле locals.tf опишите в **одном** local-блоке имя каждой ВМ, используйте интерполяцию ${..} с НЕСКОЛЬКИМИ переменными по примеру из лекции.
