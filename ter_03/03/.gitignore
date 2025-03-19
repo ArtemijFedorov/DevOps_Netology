@@ -1,0 +1,17 @@
+# Local .terraform directories and files
+**/.terraform/*
+.terraform*
+
+!.terraformrc
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+#JSON files
+*.json
+*.json*
+
+variables.tf
+# own secret vars store.
+personal.auto.tfvars
