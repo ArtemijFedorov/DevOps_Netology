@@ -12,5 +12,5 @@ provider "yandex" {
   cloud_id                 = var.cloud_id
   folder_id                = var.folder_id
   zone                     = var.default_zone
-  service_account_key_file = file("/home/fedor/key.json")
+  service_account_key_file = file("/home/fedor/Документы/Netology_File/DevOps_Netology/ter-homeworks_02/netology_iam_key.json")
 }
